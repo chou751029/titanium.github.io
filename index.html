@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年鈦金屬產業年鑑 - 台灣市場分析</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft JhengHei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 30px 0;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: white;
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .card h2 {
+            color: #4a5568;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #2d3748;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .country-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .country-name {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .country-percent {
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .industry-chain {
+            background: #f8fafc;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 5px solid #667eea;
+        }
+
+        .chain-level {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .chain-level h4 {
+            color: #667eea;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 5px;
+        }
+
+        .chain-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .chain-item {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+            border-left: 5px solid #ff6b6b;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .tech-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 4px solid #667eea;
+        }
+
+        .tech-card h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .price-chart {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .application-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .application-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .application-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .key-points {
+            background: #f7fafc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .key-points ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .key-points li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .key-points li:before {
+            content: "▶";
+            color: #667eea;
+            position: absolute;
+            left: 0;
+        }
+
+        .footnote {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            color: #4a5568;
+            font-size: 0.9rem;
+        }
+
+        /* 產業關聯圖特殊樣式 */
+        .industry-map {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .industry-header {
+            background: #667eea;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .level-box {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .level-title {
+            color: #4a5568;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .company-grid {
+            display: grid;
+            gap: 15px;
+        }
+
+        .company-box {
+            background: #e6f3ff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid #667eea;
+        }
+
+        .company-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #2d3748;
+        }
+
+        .company-list {
+            font-size: 0.9rem;
+            color: #4a5568;
+            line-height: 1.4;
+        }
+
+        /* 簡化價格趨勢圖 */
+        .simple-chart {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .chart-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .price-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            height: 180px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px 15px 15px 15px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .price-point {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .price-value {
+            background: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 2px solid;
+            min-width: 45px;
+            text-align: center;
+        }
+
+        .price-bar {
+            width: 6px;
+            border-radius: 3px;
+            margin-bottom: 6px;
+        }
+
+        .price-year {
+            font-size: 0.7rem;
+            color: #666;
+            transform: rotate(-45deg);
+            white-space: nowrap;
+            margin-top: 5px;
+        }
+
+        .china-chart .price-value {
+            border-color: #e74c3c;
+            color: #e74c3c;
+        }
+
+        .china-chart .price-bar {
+            background: linear-gradient(to top, #e74c3c, #ff6b6b);
+        }
+
+        .europe-chart .price-value {
+            border-color: #3498db;
+            color: #3498db;
+        }
+
+        .europe-chart .price-bar {
+            background: linear-gradient(to top, #3498db, #74b9ff);
+        }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .company-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔬 2025年鈦金屬產業年鑑</h1>
+            <p>台灣市場進出口分析與產業展望</p>
+        </div>
+
+        <!-- 緒論與產品定義 -->
+        <div class="section">
+            <h2 class="section-title">📋 產業概述</h2>
+            <div class="card">
+                <h2>🔍 鈦金屬產品定義與特性</h2>
+                <div class="key-points">
+                    <ul>
+                        <li><strong>化學符號Ti，原子序數22</strong> - 1791年由William Gregor發現，以希臘神話巨人「泰坦」命名</li>
+                        <li><strong>優異特性</strong> - 密度為鐵的60%，機械強度約為鐵的2倍、鋁的6倍，具優異耐腐蝕性</li>
+                        <li><strong>稀有金屬</strong> - 雖在地殼豐富度排名第10位，但提取技術困難，被歸類為稀有金屬</li>
+                        <li><strong>主要來源</strong> - 鈦鐵礦(FeTiO₃)、金紅石(TiO₂)與釩鈦鐵礦</li>
+                        <li><strong>產品應用</strong> - 90%用於鈦白粉生產，僅5%提煉成海綿鈦供金屬用途</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>2024年全球鈦礦資源狀況：</strong><br>
+                    • 總儲量5.6億公噸（較2023年減少25%）<br>
+                    • 鈦鐵礦占91.8%（5.1億公噸）<br>
+                    • 金紅石占8.2%（0.5億公噸）<br>
+                    • 海綿鈦全球產量約32萬公噸
+                </div>
+            </div>
+        </div>
+
+        <!-- 台灣產業關聯圖 -->
+        <div class="section">
+            <h2 class="section-title">🏭 台灣鈦金屬產業關聯圖</h2>
+            <div class="industry-map">
+                <div class="industry-header">🏭 鈦產業</div>
+                
+                <!-- 上游材料 -->
+                <div class="level-box">
+                    <div class="level-title">🌍 上游材料</div>
+                    <div class="company-grid" style="grid-template-columns: 1fr 1fr;">
+                        <div class="company-box">
+                            <div class="company-title">海綿鈦/鈦錠</div>
+                            <div class="company-list">
+                                寶鈦、寶鋼特鋼、遵義鈦業、中鋼精材<br>
+                                (鑫科子公司)、ATI、Timet、<br>
+                                VSMPO(以上皆為進口)、精鋼精密(鈦錠)
+                            </div>
+                        </div>
+                        <div class="company-box">
+                            <div class="company-title">棒材、板材、箔材、管材、型材、線材</div>
+                            <div class="company-list">
+                                精鋼精密、中鋼、寶鈦、寶鋼<br>
+                                特鋼、大同特殊鋼、新日鐵
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 周邊加工 -->
+                <div class="level-box">
+                    <div class="level-title">🔧 周邊加工</div>
+                    <div class="company-grid" style="grid-template-columns: repeat(3, 1fr);">
+                        <div class="company-box">
+                            <div class="company-title">機加工</div>
+                            <div class="company-list">寶一、長亨、<br>長郁、晟田</div>
+                        </div>
+                        <div class="company-box">
+                            <div class="company-title">模具</div>
+                            <div class="company-list">梧濟、捷越、<br>全存</div>
+                        </div>
+                        <div class="company-box">
+                            <div class="company-title">熱處理/表面處理</div>
+                            <div class="company-list">大鎪科技、美上鎂、克鉻耐鎂鋁</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 中游製造 -->
+                <div class="level-box" style="border: 2px dashed #48bb78; background: #e8f5e8;">
+                    <div class="level-title">🏭 中游製造</div>
+                    <div class="company-grid" style="grid-template-columns: repeat(4, 1fr);">
+                        <div class="company-box" style="background: white; border: 1px solid #48bb78;">
+                            <div class="company-title">抽條/抽線</div>
+                            <div class="company-list">台灣林吉金屬、<br>鈦色材料</div>
+                        </div>
+                        <div class="company-box" style="background: white; border: 1px solid #48bb78;">
+                            <div class="company-title">鑄造</div>
+                            <div class="company-list">明安、復盛應用、<br>大田、鉅明、慈鈦</div>
+                        </div>
+                        <div class="company-box" style="background: white; border: 1px solid #48bb78;">
+                            <div class="company-title">銲接</div>
+                            <div class="company-list">柏夫、鍾銲、亞<br>炬、大盈、鈦贊、<br>亞鈦</div>
+                        </div>
+                        <div class="company-box" style="background: white; border: 1px solid #48bb78;">
+                            <div class="company-title">鍛造</div>
+                            <div class="company-list">復盛應用、富達、<br>豐益、豐達科技</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 下游應用 -->
+                <div class="level-box" style="background: #fef5e7;">
+                    <div class="level-title">🎯 下游</div>
+                    <div class="company-grid" style="grid-template-columns: repeat(5, 1fr);">
+                        <div class="company-box" style="background: #ff6b6b; color: white; text-align: center;">
+                            <div class="company-title">運動器材</div>
+                            <div class="company-list">寶豐、長維、巨大、<br>美利達、武王</div>
+                        </div>
+                        <div class="company-box" style="background: #4ecdc4; color: white; text-align: center;">
+                            <div class="company-title">生醫</div>
+                            <div class="company-list">聯合骨科、<br>冠亞生技、<br>皇亮、愛派司</div>
+                        </div>
+                        <div class="company-box" style="background: #45b7d1; color: white; text-align: center;">
+                            <div class="company-title">航太</div>
+                            <div class="company-list">漢翔、亞航、<br>長榮航宇</div>
+                        </div>
+                        <div class="company-box" style="background: #96ceb4; color: white; text-align: center;">
+                            <div class="company-title">化工/電力</div>
+                            <div class="company-list">中油、台塑、<br>奇美、台電</div>
+                        </div>
+                        <div class="company-box" style="background: #feca57; color: white; text-align: center;">
+                            <div class="company-title">3C資訊</div>
+                            <div class="company-list">廣達、英業達、<br>宏碁、仁寶、鴻準</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 20px; color: #718096; font-size: 0.9rem; text-align: center;">
+                    <strong>圖5-1-1 台灣鈦金屬產業關聯圖</strong><br>
+                    資料來源：金屬中心MII-ITIS研究團隊整理(2024/02)
+                </div>
+            </div>
+        </div>
+
+        <!-- 產品與技術概況 -->
+        <div class="section">
+            <h2 class="section-title">⚙️ 技術發展概況</h2>
+            <div class="card">
+                <h2>🔬 製程技術突破</h2>
+                
+                <h3>傳統Kroll工法的挑戰與突破</h3>
+                <div class="key-points">
+                    <ul>
+                        <li><strong>Kroll工法問題</strong> - 成本高、產生有毒物質、高耗能（1公斤鈦需257.78MJ能量）</li>
+                        <li><strong>鋁熱還原技術</strong> - 日本Toho與UAT合作，碳排放顯著降低，電力消耗減少70-80%</li>
+                        <li><strong>HAMR技術</strong> - 美國IperionX氫輔助鎂熱冶金還原，氧含量低於0.15%</li>
+                        <li><strong>釔脫氧技術</strong> - 東京大學2024年突破，氧含量從5,000ppm降至200ppm</li>
+                    </ul>
+                </div>
+
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h4>🖨️ 積層製造(3D列印)</h4>
+                        <p>材料利用率可達90%以上，縮短加工週期，節省20-50%成本，突破傳統技術限制</p>
+                    </div>
+                    <div class="tech-card">
+                        <h4>🔬 合金優化</h4>
+                        <p>添加稀有元素(Y、Hf、Ru)強化抗氧化性，NASA GRX-810合金可在1,000°C極端環境運作</p>
+                    </div>
+                    <div class="tech-card">
+                        <h4>🏥 生醫合金</h4>
+                        <p>開發低彈性模量鈦合金(Ti-Nb-Zr-Ta)，降低植入物壓力遮蔽效應</p>
+                    </div>
+                    <div class="tech-card">
+                        <h4>✈️ 航太合金</h4>
+                        <p>ATI Titan 27合金，強度/重量比較Ti 6Al-4V提高15%，具高延展性</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 全球市場供需 -->
+        <div class="section">
+            <h2 class="section-title">🌍 全球市場供需現況</h2>
+            
+            <!-- 海綿鈦生產國 -->
+            <div class="card">
+                <h2>🏭 全球海綿鈦主要生產國 (2024年)</h2>
+                <div class="highlight-box">
+                    <strong>2024年全球海綿鈦總產量：32萬公噸</strong><br>
+                    前三大國家（中國大陸、日本、俄羅斯）合計占90.9%
+                </div>
+                <div class="grid-3">
+                    <div class="stat-box">
+                        <div class="stat-number">22萬</div>
+                        <div class="stat-label">🇨🇳 中國大陸 (68.8%)</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">5.5萬</div>
+                        <div class="stat-label">🇯🇵 日本 (17.2%)</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">2萬</div>
+                        <div class="stat-label">🇷🇺 俄羅斯 (6.3%)</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">1.5萬</div>
+                        <div class="stat-label">🇸🇦 沙烏地阿拉伯 (4.7%)</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">1.4萬</div>
+                        <div class="stat-label">🇰🇿 哈薩克 (4.4%)</div>
+                    </div>
+                </div>
+                
+                <div class="highlight-box">
+                    <strong>重要趨勢：</strong><br>
+                    • 沙烏地阿拉伯成長最快（年均複合成長率231%）<br>
+                    • 俄羅斯受制裁影響，年均負成長-17.9%<br>
+                    • 烏克蘭因戰爭影響，2023-2024年產量無法估計
+                </div>
+            </div>
+
+            <!-- 全球進出口 -->
+            <div class="grid-2">
+                <div class="card">
+                    <h2>📥 全球進口概況 (2024年)</h2>
+                    <div class="stat-box">
+                        <div class="stat-number">26.9萬</div>
+                        <div class="stat-label">公噸 (年複合成長率3.5%)</div>
+                    </div>
+                    
+                    <h3>前五大進口國</h3>
+                    <div class="country-item">
+                        <span class="country-name">🇺🇸 美國</span>
+                        <span class="country-percent">27.6%</span>
+                    </div>
+                    <div class="country-item">
+                        <span class="country-name">🇬🇧 英國</span>
+                        <span class="country-percent">9.5%</span>
+                    </div>
+                    <div class="country-item">
+                        <span class="country-name">🇩🇪 德國</span>
+                        <span class="country-percent">7.7%</span>
+                    </div>
+                    <div class="country-item">
+                        <span class="country-name">🇫🇷 法國</span>
+                        <span class="country-percent">7.6%</span>
+                    </div>
+                    <div class="country-item">
+                        <span class="country-name">🇰🇷 南韓</span>
+                        <span class="country-percent">7.3%</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>📤 全球出口概況 (2024年)</h2>
+                    <div class="stat-box">
+                        <div class="stat-number">25.2萬</div>
+                        <div class="stat-label">公噸 (年複合成長率6.4%)</div>
+                    </div>
+                    
+                    <h3>前五大出口國</h3>
+                    <div class="country-item">
+                        <span class="country-name">🇯🇵 日本</span>
+                        <span class="country-percent">19.7%</span>
+                    </div>
+                    <div class="country-item">
+                        <span class="country-name">🇺🇸 美國</span>
+                        <span class="country-percent">17.9%</span>
+                    </div>
+                    <div class="country-item">
+                        <span class="country-name">🇨🇳 中國大陸</span>
+                        <span class="country-percent">17.0%</span>
+                    </div>
+                    <div class="country-item">
+                        <span class="country-name">🇰🇿 哈薩克</span>
+                        <span class="country-percent">7.3%</span>
+                    </div>
+                    <div class="country-item">
+                        <span class="country-name">🇬🇧 英國</span>
+                        <span class="country-percent">6.9%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 價格趨勢 -->
+            <div class="card">
+                <h2>💰 海綿鈦價格趨勢分析</h2>
+                <div class="grid-2">
+                    <div class="simple-chart china-chart">
+                        <div class="chart-title" style="color: #e74c3c;">🇨🇳 中國大陸海綿鈦價格走勢</div>
+                        <div class="price-line">
+                            <div class="price-point">
+                                <div class="price-value">8,330</div>
+                                <div class="price-bar" style="height: 70px;"></div>
+                                <div class="price-year">2020</div>
+                            </div>
+                            <div class="price-point">
+                                <div class="price-value">12,320</div>
+                                <div class="price-bar" style="height: 110px;"></div>
+                                <div class="price-year">2021</div>
+                            </div>
+                            <div class="price-point">
+                                <div class="price-value">10,983</div>
+                                <div class="price-bar" style="height: 95px;"></div>
+                                <div class="price-year">2022</div>
+                            </div>
+                            <div class="price-point">
+                                <div class="price-value">7,000</div>
+                                <div class="price-bar" style="height: 65px;"></div>
+                                <div class="price-year">2023</div>
+                            </div>
+                            <div class="price-point">
+                                <div class="price-value">6,384</div>
+                                <div class="price-bar" style="height: 55px;"></div>
+                                <div class="price-year">2024</div>
+                            </div>
+                        </div>
+                        <div style="text-align: center; color: #e74c3c; font-weight: bold;">📉 五年累計跌幅 23.4%</div>
+                        <div style="font-size: 0.8rem; color: #a0aec0; text-align: center; margin-top: 10px;">
+                            圖5-2-1 近5年中國大陸海綿鈦價格走勢 (單位：美元/公噸)
+                        </div>
+                    </div>
+                    
+                    <div class="simple-chart europe-chart">
+                        <div class="chart-title" style="color: #3498db;">🇪🇺 歐洲海綿鈦價格走勢</div>
+                        <div class="price-line">
+                            <div class="price-point">
+                                <div class="price-value">8,150</div>
+                                <div class="price-bar" style="height: 60px;"></div>
+                                <div class="price-year">2020</div>
+                            </div>
+                            <div class="price-point">
+                                <div class="price-value">8,150</div>
+                                <div class="price-bar" style="height: 60px;"></div>
+                                <div class="price-year">2021</div>
+                            </div>
+                            <div class="price-point">
+                                <div class="price-value">13,500</div>
+                                <div class="price-bar" style="height: 100px;"></div>
+                                <div class="price-year">2022</div>
+                            </div>
+                            <div class="price-point">
+                                <div class="price-value">12,000</div>
+                                <div class="price-bar" style="height: 90px;"></div>
+                                <div class="price-year">2023</div>
+                            </div>
+                            <div class="price-point">
+                                <div class="price-value">12,790</div>
+                                <div class="price-bar" style="height: 95px;"></div>
+                                <div class="price-year">2024</div>
+                            </div>
+                        </div>
+                        <div style="text-align: center; color: #3498db; font-weight: bold;">📈 五年累計漲幅 56.9%</div>
+                        <div style="font-size: 0.8rem; color: #a0aec0; text-align: center; margin-top: 10px;">
+                            圖5-2-2 近5年歐洲海綿鈦價格走勢 (單位：美元/公噸)
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="key-points">
+                    <ul>
+                        <li><strong>中國大陸</strong> - 2024年維持低檔盤整，反映供給過剩與下游需求疲軟</li>
+                        <li><strong>歐洲</strong> - 俄烏戰爭影響，替代來源供應不穩定，對高品質鈦材進口依賴度高</li>
+                        <li><strong>價差分析</strong> - 歐洲價格較中國大陸高近一倍，顯示地緣政治對供應鏈的重大影響</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 台灣進出口數據 -->
+        <div class="section">
+            <h2 class="section-title">🇹🇼 台灣市場供需現況</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h2>📥 2024年進口概況</h2>
+                    <div class="stat-box">
+                        <div class="stat-number">5,350</div>
+                        <div class="stat-label">公噸 (年增45.1%)</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">48.2</div>
+                        <div class="stat-label">億元新台幣</div>
+                    </div>
+                    
+                    <h3>前三大進口國</h3>
+                    <div class="country-item">
+                        <span class="country-name">🇨🇳 中國大陸</span>
+                        <span class="country-percent">38.8%</span>
+                    </div>
+                    <div class="country-item">
+                        <span class="country-name">🇯🇵 日本</span>
+                        <span class="country-percent">28.9%</span>
+                    </div>
+                    <div class="country-item">
+                        <span class="country-name">🇺🇸 美國</span>
+                        <span class="country-percent">18.4%</span>
+                    </div>
+
+                    <div class="key-points">
+                        <h4>主要進口產品</h4>
+                        <ul>
+                            <li>其他鈦製品 (44.5%)</li>
+                            <li>鈦金屬條、桿 (24%)</li>
+                            <li>未經塑性加工之鈦、粉 (18.3%)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>📤 2024年出口概況</h2>
+                    <div class="stat-box">
+                        <div class="stat-number">3,059</div>
+                        <div class="stat-label">公噸 (年複合成長率23.2%)</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">20.5</div>
+                        <div class="stat-label">億元新台幣</div>
+                    </div>
+                    
+                    <h3>前三大出口國</h3>
+                    <div class="country-item">
+                        <span class="country-name">🇺🇸 美國</span>
+                        <span class="country-percent">37.0%</span>
+                    </div>
+                    <div class="country-item">
+                        <span class="country-name">🇬🇧 英國</span>
+                        <span class="country-percent">16.4%</span>
+                    </div>
+                    <div class="country-item">
+                        <span class="country-name">🇯🇵 日本</span>
+                        <span class="country-percent">12.8%</span>
+                    </div>
+
+                    <div class="key-points">
+                        <h4>主要出口產品</h4>
+                        <ul>
+                            <li>鈦廢料及碎屑 (70%，主要至印度、日本)</li>
+                            <li>其他鈦製品 (出口值占54%)</li>
+                            <li>鈦廢料出口年成長79.1%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>📊 台灣鈦金屬貿易趨勢分析</h2>
+                <div class="highlight-box">
+                    <strong>2024年市場回溫跡象：</strong><br>
+                    • 進口量較2023年大幅成長45.1%，顯示國內需求明顯復甦<br>
+                    • 出口量持續成長，年複合成長率達23.2%<br>
+                    • 「鈦金屬條、桿」進口回升，受國際經濟復甦帶動<br>
+                    • 航太產業需求復甦，帶動高值鈦材供給成長
+                </div>
+                
+                <div class="key-points">
+                    <h4>重要發展趨勢</h4>
+                    <ul>
+                        <li><strong>進口依賴</strong> - 台灣無生產海綿鈦及鈦錠等上游原料，主要仰賴進口</li>
+                        <li><strong>應用多元化</strong> - 從傳統航太、高爾夫球頭擴展至3C電子、機器人零組件</li>
+                        <li><strong>廢料回收</strong> - 鈦廢料出口大幅成長79.1%，主要供應印度、日本市場</li>
+                        <li><strong>高值化趨勢</strong> - 「其他鈦製品」出口值占比達54%，顯示產業朝高附加價值發展</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 下游應用 -->
+        <div class="section">
+            <h2 class="section-title">🔧 下游應用領域</h2>
+            <div class="applications-grid">
+                <div class="application-card">
+                    <span class="application-icon">🛡️</span>
+                    <div style="font-weight: bold; margin-bottom: 10px;">軍事國防</div>
+                    <div style="font-size: 0.9rem; color: #718096;">飛彈零組件、軍用設備、國防自主材料</div>
+                </div>
+                <div class="application-card">
+                    <span class="application-icon">✈️</span>
+                    <div style="font-weight: bold; margin-bottom: 10px;">航太</div>
+                    <div style="font-size: 0.9rem; color: #718096;">飛機引擎、機身蒙皮、扣件</div>
+                </div>
+                <div class="application-card">
+                    <span class="application-icon">🏌️</span>
+                    <div style="font-weight: bold; margin-bottom: 10px;">民生運動</div>
+                    <div style="font-size: 0.9rem; color: #718096;">高爾夫球頭、自行車、運動器械</div>
+                </div>
+                <div class="application-card">
+                    <span class="application-icon">🏥</span>
+                    <div style="font-weight: bold; margin-bottom: 10px;">醫療生技</div>
+                    <div style="font-size: 0.9rem; color: #718096;">骨釘、骨板、牙科植體、心臟支架</div>
+                </div>
+                <div class="application-card">
+                    <span class="application-icon">🏭</span>
+                    <div style="font-weight: bold; margin-bottom: 10px;">工業</div>
+                    <div style="font-size: 0.9rem; color: #718096;">化工管路、熱交換器</div>
+                </div>
+                <div class="application-card">
+                    <span class="application-icon">🌊</span>
+                    <div style="font-weight: bold; margin-bottom: 10px;">海洋</div>
+                    <div style="font-size: 0.9rem; color: #718096;">海水管路、海底工程</div>
+                </div>
+                <div class="application-card">
+                    <span class="application-icon">🏢</span>
+                    <div style="font-weight: bold; margin-bottom: 10px;">建築</div>
+                    <div style="font-size: 0.9rem; color: #718096;">建築帷幕、結構材料</div>
+                </div>
+                <div class="application-card">
+                    <span class="application-icon">⚡</span>
+                    <div style="font-weight: bold; margin-bottom: 10px;">能源</div>
+                    <div style="font-size: 0.9rem; color: #718096;">氫能設備、綠能應用</div>
+                </div>
+                <div class="application-card">
+                    <span class="application-icon">🤖</span>
+                    <div style="font-weight: bold; margin-bottom: 10px;">機器人</div>
+                    <div style="font-size: 0.9rem; color: #718096;">關節零組件、框架結構</div>
+                </div>
+                <div class="application-card">
+                    <span class="application-icon">📱</span>
+                    <div style="font-weight: bold; margin-bottom: 10px;">3C資訊</div>
+                    <div style="font-size: 0.9rem; color: #718096;">手機外殼、筆電零件</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 技術發展 -->
+        <div class="section">
+            <h2 class="section-title">🔬 關鍵技術發展趨勢</h2>
+            <div class="card">
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h4>🖨️ 3D列印</h4>
+                        <div style="font-weight: bold; font-size: 1.1rem; margin-bottom: 10px;">積層製造技術</div>
+                        <div style="font-size: 0.9rem;">材料利用率90%以上，節省20-50%成本</div>
+                    </div>
+                    <div class="tech-card">
+                        <h4>🤖 AI技術</h4>
+                        <div style="font-weight: bold; font-size: 1.1rem; margin-bottom: 10px;">智慧化製程優化</div>
+                        <div style="font-size: 0.9rem;">Callaway AI Smart Face技術應用</div>
+                    </div>
+                    <div class="tech-card">
+                        <h4>⚗️ 合金配比</h4>
+                        <div style="font-weight: bold; font-size: 1.1rem; margin-bottom: 10px;">新型材料開發</div>
+                        <div style="font-size: 0.9rem;">NASA GRX-810、ATI Titan 27合金</div>
+                    </div>
+                    <div class="tech-card">
+                        <h4>♻️ 回收技術</h4>
+                        <div style="font-weight: bold; font-size: 1.1rem; margin-bottom: 10px;">循環經濟應用</div>
+                        <div style="font-size: 0.9rem;">廢鈦回收升級、HAMR技術突破</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footnote">
+            <p><strong>資料來源：</strong>2025金屬材料產業年鑑－鈦金屬篇 | 財團法人金屬工業研究發展中心</p>
+            <p><strong>HS CODE範圍：</strong>8108101000-8108909090 (涵蓋鈦粉、廢料、板材、條桿、管線等各類鈦製品)</p>
+        </div>
+    </div>
+</body>
+</html>
